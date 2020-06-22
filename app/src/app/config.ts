@@ -1,0 +1,1 @@
+export const base_url = "http://localhost/deliveryapp/index.php"

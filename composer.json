@@ -1,0 +1,12 @@
+{
+    "name": "survtech/deliveryapp",
+    "authors": [
+        {
+            "name": "ben njunge",
+            "email": "survtechke@gmail.com"
+        }
+    ],
+    "require": {
+        "africastalking/africastalking": "^2.3"
+    }
+}

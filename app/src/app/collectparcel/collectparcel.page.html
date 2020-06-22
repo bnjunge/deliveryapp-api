@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>collect parcel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-padding">
+    Please ensure you have the id of the person collecting the item
+  </p>
+  <ion-item>
+    <ion-label position="floating">Enter Parcel ID</ion-label>
+    <ion-input [(ngModel)]="parcel_info.id" name="id" type="number"></ion-input>
+  </ion-item>
+  <ion-button (click)="get_parcel_info()">Get Parcel</ion-button>
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Delivery App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Delivery App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="header">
+    <h4>Enter Percel Information</h4>
+  </div>
+  <div class="form-input">
+    <ion-item>
+      <ion-label position="floating">Senders Name</ion-label>
+      <ion-input [(ngModel)]="parcel_info.sender_name" name="sender_name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Sender ID</ion-label>
+      <ion-input [(ngModel)]="parcel_info.sender_id" name="sender_id"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senders Mobile</ion-label>
+      <ion-input [(ngModel)]="parcel_info.sender_mobile" name="sender_mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Parcel Origin</ion-label>
+      <ion-input [(ngModel)]="parcel_info.parcel_origin" name="parcel_origin"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Parcel Description</ion-label>
+      <ion-input [(ngModel)]="parcel_info.parcel_description" name="parcel_description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Recipient Name</ion-label>
+      <ion-input [(ngModel)]="parcel_info.recipient_name" name="recipient_name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Recipient Number</ion-label>
+      <ion-input [(ngModel)]="parcel_info.recipient_mobile" name="recipient_mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Destination</ion-label>
+      <ion-input [(ngModel)]="parcel_info.destination" name="destination"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cost</ion-label>
+      <ion-input [(ngModel)]="parcel_info.cost_of_delivery" name="cost_of_delivery"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Paid</ion-label>
+      <ion-input [(ngModel)]="parcel_info.is_payed_for" name="is_payed_for"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="save_info()">Save Parcel Info</ion-button>
+    <ion-button color="danger" (click)="collect_parcel()">Collect</ion-button>
+  </div>
+</ion-content>
