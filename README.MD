@@ -1,6 +1,6 @@
-#How to use the project
+# How to use the project
 
-##Backend
+## Backend
 Open ``config.php`` and edit database details
 Open ``baseClass.php`` and add you Africas Talking username and password 
         ```
